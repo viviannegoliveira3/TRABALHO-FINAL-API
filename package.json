@@ -5,6 +5,7 @@
     "jsonwebtoken": "^9.0.2",
     "mocha": "^11.7.2",
     "supertest": "^7.1.4",
+    "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
   "name": "trabalho-final-api",
