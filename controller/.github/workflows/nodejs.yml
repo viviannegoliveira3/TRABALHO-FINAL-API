@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "habilitando-pipeline"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "habilitando-pipeline" ]
 
 jobs:
   build:
@@ -24,10 +24,12 @@ jobs:
 
     - name: Run tests
       run: npm test
-
       
     - name: Rodar os testes de API via Controller
       run: npm run test-rest-controller
 
     - name: Subir a API Rest 
       run: npm run start-rest &
+  
+    - name: Rodar os testes External de API Rest via HTTP
+      run: npm run test-rest-external
