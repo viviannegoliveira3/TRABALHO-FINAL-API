@@ -7,7 +7,21 @@
     "supertest": "^7.1.4",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
+
+     },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viviannegoliveira3/TRABALHO-FINAL-API.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API/issues"
+  },
+  "homepage": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API#readme",
+
   "name": "trabalho-final-api",
   "version": "1.0.0",
   "description": "API REST para registro, login, listagem de produtos e checkout (boleto/cartão de crédito), com regras de negócio e autenticação JWT. Banco de dados em memória.",
@@ -18,8 +32,6 @@
   "scripts": {
     "test": "mocha",
     "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
+
