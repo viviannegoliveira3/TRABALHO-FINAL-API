@@ -24,3 +24,10 @@ jobs:
 
     - name: Run tests
       run: npm test
+
+      
+    - name: Rodar os testes de API via Controller
+      run: npm run test-rest-controller
+
+    - name: Subir a API Rest 
+      run: npm run start-rest &
