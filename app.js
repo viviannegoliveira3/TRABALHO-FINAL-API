@@ -1,0 +1,13 @@
+const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+const userController = require('./controller/userController');
+const productController = require('./controller/productController');
+const checkoutController = require('./controller/checkoutController');
+const app = express();
+app.use(express.json());
+app.use('/api/users', userController);
+app.use('/api/products', productController);
+app.use('/api/checkout', checkoutController);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+module.exports = app;

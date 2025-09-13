@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "chai": "^6.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.7.2",
+    "supertest": "^7.1.4",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "name": "trabalho-final-api",
+  "version": "1.0.0",
+  "description": "API REST para registro, login, listagem de produtos e checkout (boleto/cartão de crédito), com regras de negócio e autenticação JWT. Banco de dados em memória.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
