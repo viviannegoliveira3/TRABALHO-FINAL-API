@@ -7,8 +7,7 @@
     "supertest": "^7.1.4",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
-
-     },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viviannegoliveira3/TRABALHO-FINAL-API.git"
@@ -21,7 +20,6 @@
     "url": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API/issues"
   },
   "homepage": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API#readme",
-
   "name": "trabalho-final-api",
   "version": "1.0.0",
   "description": "API REST para registro, login, listagem de produtos e checkout (boleto/cartão de crédito), com regras de negócio e autenticação JWT. Banco de dados em memória.",
@@ -36,7 +34,8 @@
     "test-graphql-external": "mocha 'test/graphql/external/**/*.api.test.js' --timeout 10000 --reporter mochawesome",
     "test-graphql-controller": "mocha 'test/graphql/controller/**/*.api.test.js' --timeout 10000 --reporter mochawesome",
     "start-rest": "node server.js"
-    
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
-
