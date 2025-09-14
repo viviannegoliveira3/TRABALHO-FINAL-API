@@ -1,4 +1,26 @@
 {
+  "name": "trabalho-final-api",
+  "version": "1.0.0",
+  "description": "API REST para registro, login, listagem de produtos e checkout (boleto/cartão de crédito), com regras de negócio e autenticação JWT. Banco de dados em memória.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "start-rest": "nodemon server.js",
+    "test-rest-external": "mocha test/testExternal.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viviannegoliveira3/TRABALHO-FINAL-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API/issues"
+  },
+  "homepage": "https://github.com/viviannegoliveira3/TRABALHO-FINAL-API#readme",
+  "type": "commonjs",
   "dependencies": {
     "chai": "^6.0.1",
     "express": "^5.1.0",
@@ -8,18 +30,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
-  "name": "trabalho-final-api",
-  "version": "1.0.0",
-  "description": "API REST para registro, login, listagem de produtos e checkout (boleto/cartão de crédito), com regras de negócio e autenticação JWT. Banco de dados em memória.",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  }
 }
